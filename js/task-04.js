@@ -1,7 +1,7 @@
 const refs = {
   valueNumber: document.querySelector("#value"),
   decrementBtn: document.querySelector('button[data-action="decrement"]'),
-  incrementBtn: document.querySelector('button[data-action="decrement"]'),
+  incrementBtn: document.querySelector('button[data-action="increment"]'),
   counterValue: 0,
 };
 
@@ -15,5 +15,5 @@ const addNum = () => {
   return (refs.valueNumber.textContent = refs.counterValue);
 };
 
-refs.decrementBtn.addEvenListener("click", removeNum);
-refs.incrementBtn.addEvenListener("click", addNum);
+refs.decrementBtn.addEventListener("click", removeNum);
+refs.incrementBtn.addEventListener("click", addNum);

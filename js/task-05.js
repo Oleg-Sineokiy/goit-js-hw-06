@@ -1,6 +1,6 @@
 const refsAn = {
   inputText: document.querySelector("#name-input"),
-  outputText: document.querySelector("#name-input"),
+  outputText: document.querySelector("#name-output"),
 };
 
 refsAn.inputText.addEventListener("input", (event) => {
